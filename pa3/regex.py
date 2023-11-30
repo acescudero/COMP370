@@ -234,3 +234,26 @@ class RegEx:
 		dfa = self.nfa.to_DFA()
 		result = dfa.simulate(str)
 		return result
+
+
+if __name__ == '__main__':
+	regex_filename = "regex21.txt"
+
+	str_filename = "str21.txt"
+	correct_filename = "correct21.txt"
+
+
+	regex = RegEx(regex_filename)
+	correct_file = open(correct_filename)
+	correct_list =  [True if result == "true" else False for result in correct_file.read().split()]
+
+	str_file = open(str_filename)
+
+	strings = []
+	for str in str_file:
+		strings.append(str[str.find('"') + 1:str.rfind('"')])
+
+	for i in range(len(strings)):
+		print(f"String is {strings[i]}")
+		print(f"Correct = {correct_list[i]}")
+		print(f"My ans = {regex.simulate(strings[i])}")
