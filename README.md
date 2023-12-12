@@ -6,6 +6,8 @@ PA2: NFA Simulator
 
 PA3: RegEx Simulator
 
+PA4: Lexical Analyzer
+
 Authors: 
   - Augusto Escudero (aescudero@sandiego.edu)
   - Jorge Rodriguez (jorgerodriguez@sandiego.edu)
