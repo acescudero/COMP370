@@ -1,1 +1,1 @@
-Only regex.py was modified for this pa. All other files remain the same from pa3
+From pa3, regex.py was the only file that was modified. All other files remain the same.
