@@ -224,6 +224,7 @@ class Lex:
 			raise InvalidToken
 
 if __name__ == "__main__":
+	# Code provided by the professor
 	num = 1   # can replace this with any number 1, ... 20.
 			  # can also create your own test files.
 	reg_ex_filename = f"regex{num}.txt" 
